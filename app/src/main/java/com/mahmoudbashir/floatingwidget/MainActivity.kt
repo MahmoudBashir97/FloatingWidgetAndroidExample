@@ -29,14 +29,10 @@ class MainActivity : AppCompatActivity() {
                 Uri.parse("package:$packageName")
             )
             startActivityForResult( intent,APP_PERMISSION_REQUEST)
-            Toast.makeText(this,"granted !!",Toast.LENGTH_LONG).show()
         } else {
-            Toast.makeText(this,"not granted !!",Toast.LENGTH_LONG).show()
 
             initializeView()
         }
-
-        //initializeView()
     }
 
     private fun initializeView() {
